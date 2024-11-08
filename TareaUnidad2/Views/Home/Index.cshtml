@@ -1,0 +1,13 @@
+﻿@model IEnumerable<TareaUnidad2.Models.ViewModels.HomeViewModel>
+@{
+	Layout = "_Layout";
+}
+<h1>Oferta Académica</h1>
+
+
+	<ol class="rectangle-list">
+	@foreach (var carr in Model)
+	{
+		<li><a href="/home/info/@carr.Id">@carr.Plan @carr.Nombre</a></li>
+	}
+	</ol>
